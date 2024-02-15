@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Answer</title>
+</head>
+<body>
+    <h1>Submit Answer for {{ assignment_title }}</h1>
+    <form action="/submit_answer/{{ assignment_title }}" method="post" enctype="multipart/form-data">
+        <label for="answer">Answer:</label><br>
+        <textarea id="answer" name="answer" rows="4" required></textarea><br>
+        <label for="file">Upload PDF:</label><br>
+        <input type="file" id="file" name="file"><br>
+        <button type="submit">Submit Answer</button>
+    </form>
+</body>
+</html>
+

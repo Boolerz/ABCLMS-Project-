@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Page</title>
+</head>
+<body>
+    <h1>Assignments</h1>
+    <ul>
+        {% for title, description in assignments.items() %}
+            <li>{{ title }} - {{ description }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Post New Assignment</h2>
+    <form action="/post_assignment" method="post">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" required></textarea><br>
+        <button type="submit">Post Assignment</button>
+    </form>
+</body>
+</html>

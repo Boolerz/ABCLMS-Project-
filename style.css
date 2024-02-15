@@ -1,0 +1,46 @@
+body{
+    margin: 20px;
+    background-color: rgb(194, 203, 203);
+    padding: 5px;
+}
+
+/* 13. Styling for the button within a link in the home description */ 
+
+button {   
+    padding: 0.7rem 2rem;   
+    font-weight: bold;   
+    background-color: greenyellow;  
+    border: 1px solid rgb(0, 110, 255);   
+    border-radius: 10px;   
+    color: rgb(0, 110, 255);   
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 1s;
+    position: relative; 
+
+ }  
+ button:hover{
+    background-color: blue;
+    color: rgb(255, 178, 127);
+ }
+ 
+h2{
+ font-weight: bold;
+ color: rgb(128, 8, 239);
+}
+img{
+    position: absolute;
+    right: 100px;
+    margin-top: 100px;
+    height: 500px; 
+    opacity: 100%;
+    padding: 0%;
+    margin: 0;
+}
+div{
+    padding: 20px;
+    border: 5px solid blue;
+    background-color:white;
+
+}
+
